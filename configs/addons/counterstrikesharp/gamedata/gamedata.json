@@ -90,7 +90,7 @@
   },
   "CCSPlayer_ItemServices_GiveNamedItem": {
     "offsets": {
-      "windows": 18,
+      "windows": 19,
       "linux": 20
     }
   },
@@ -169,7 +169,7 @@
   },
   "CBaseEntity_Teleport": {
     "offsets": {
-      "windows": 156,
+      "windows": 157,
       "linux": 156
     }
   },
