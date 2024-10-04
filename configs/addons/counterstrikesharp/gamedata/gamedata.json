@@ -22,14 +22,14 @@
   },
   "CCSPlayerController_ChangeTeam": {
     "offsets": {
-      "windows": 98,
-      "linux": 97
+      "windows": 99,
+      "linux": 99
     }
   },
   "CCSPlayerController_Respawn": {
     "offsets": {
-      "windows": 254,
-      "linux": 256
+      "windows": 256,
+      "linux": 259
     }
   },
   "CBasePlayerController_SetPawn": {
@@ -91,19 +91,19 @@
   "CCSPlayer_ItemServices_GiveNamedItem": {
     "offsets": {
       "windows": 17,
-      "linux": 18
+      "linux": 20
     }
   },
   "CCSPlayer_ItemServices_DropActivePlayerWeapon": {
     "offsets": {
-      "windows": 18,
-      "linux": 19
+      "windows": 19,
+      "linux": 21
     }
   },
   "CCSPlayer_ItemServices_RemoveWeapons": {
     "offsets": {
-      "windows": 19,
-      "linux": 20
+      "windows": 20,
+      "linux": 22
     }
   },
   "CGameSceneNode_GetSkeletonInstance": {
@@ -156,8 +156,8 @@
   },
   "CBasePlayerPawn_CommitSuicide": {
     "offsets": {
-      "windows": 372,
-      "linux": 372
+      "windows": 374,
+      "linux": 377
     }
   },
   "CBasePlayerPawn_RemovePlayerItem": {
@@ -170,7 +170,7 @@
   "CBaseEntity_Teleport": {
     "offsets": {
       "windows": 155,
-      "linux": 154
+      "linux": 156
     }
   },
   "CBaseEntity_TakeDamageOld": {
