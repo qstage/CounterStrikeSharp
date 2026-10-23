@@ -44,8 +44,6 @@ DLL_IMPORT ICommandLine* CommandLine();
 
 counterstrikesharp::GlobalClass* counterstrikesharp::GlobalClass::head = nullptr;
 
-CGameEntitySystem* GameEntitySystem() { return counterstrikesharp::globals::entitySystem; }
-
 // TODO: Workaround for windows, we __MUST__ have COUNTERSTRIKESHARP_API to handle it.
 // like on windows it should be `extern "C" __declspec(dllexport)`, on linux it should be anything else.
 DLL_EXPORT void InvokeNative(counterstrikesharp::fxNativeContext& context)
