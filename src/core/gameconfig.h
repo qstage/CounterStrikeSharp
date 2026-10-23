@@ -2,7 +2,7 @@
 
 #include "core/globals.h"
 #include "core/memory_module.h"
-#include <KeyValues.h>
+#include <keyvalues.h>
 
 #include <string>
 #include <unordered_map>
