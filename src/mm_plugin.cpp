@@ -28,15 +28,14 @@
 #include "core/timer_system.h"
 #include "core/utils.h"
 #include "entity2/entitysystem.h"
-#include "igameeventsystem.h"
+#include "engine2/igameeventsystem.h"
 #include "interfaces/cs2_interfaces.h"
-#include "iserver.h"
 #include "scripting/callback_manager.h"
 #include "scripting/dotnet_host.h"
 #include "scripting/script_engine.h"
 #include "tier0/vprof.h"
 #include "tier0/icommandline.h"
-#include "tier1/utlstringtoken.h"
+#include "tier0/utlstringtoken.h"
 
 DLL_IMPORT ICommandLine* CommandLine();
 

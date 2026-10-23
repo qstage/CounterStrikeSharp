@@ -31,6 +31,7 @@
 #include <variant.h>
 
 #include "vprof.h"
+#include "soundflags.h"
 
 class CTakeDamageResult;
 class CTakeDamageInfo;

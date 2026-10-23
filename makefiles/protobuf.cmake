@@ -20,9 +20,9 @@ set(PROTO_TARGETS
 )
 
 if(UNIX)
-    set(PROTOC_EXECUTABLE ${PROJECT_SOURCE_DIR}/libraries/hl2sdk-cs2/devtools/bin/linux/protoc)
+    set(PROTOC_EXECUTABLE ${PROJECT_SOURCE_DIR}/libraries/s2sdk/devtools/bin/linux/protoc)
 elseif(WIN32)
-    set(PROTOC_EXECUTABLE ${PROJECT_SOURCE_DIR}/libraries/hl2sdk-cs2/devtools/bin/protoc.exe)
+    set(PROTOC_EXECUTABLE ${PROJECT_SOURCE_DIR}/libraries/s2sdk/devtools/bin/protoc.exe)
 endif()
 
 foreach(PROTO_TARGET ${PROTO_TARGETS})
@@ -39,7 +39,7 @@ file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/protobufcompiler)
 
 add_custom_command(
     OUTPUT ${PROTO_OUTPUT}
-    COMMAND "${PROTOC_EXECUTABLE}" -I ${PROJECT_SOURCE_DIR}/libraries/hl2sdk-cs2/thirdparty/protobuf-3.21.8/src --proto_path=${PROJECT_SOURCE_DIR}/libraries/Protobufs/csgo ${PROTO_PATHS} --cpp_out=${CMAKE_CURRENT_BINARY_DIR}/protobufcompiler ${PROTO_INPUT}
+    COMMAND "${PROTOC_EXECUTABLE}" -I ${PROJECT_SOURCE_DIR}/libraries/s2sdk/thirdparty/protobuf-3.21.8/src --proto_path=${PROJECT_SOURCE_DIR}/libraries/Protobufs/csgo ${PROTO_PATHS} --cpp_out=${CMAKE_CURRENT_BINARY_DIR}/protobufcompiler ${PROTO_INPUT}
     COMMENT "Generating protobuf file"
 )
 
@@ -49,13 +49,13 @@ add_library(Protobufs STATIC
 
 target_include_directories(Protobufs
                            PUBLIC ${CMAKE_CURRENT_BINARY_DIR}/protobufcompiler
-                           PUBLIC ${PROJECT_SOURCE_DIR}/libraries/hl2sdk-cs2/thirdparty/protobuf-3.21.8/src
+                           PUBLIC ${PROJECT_SOURCE_DIR}/libraries/s2sdk/thirdparty/protobuf-3.21.8/src
 )
 
 if(WIN32)
-    target_link_libraries(Protobufs PUBLIC ${PROJECT_SOURCE_DIR}/libraries/hl2sdk-cs2/lib/public/win64/2015/libprotobuf.lib)
+    target_link_libraries(Protobufs PUBLIC ${PROJECT_SOURCE_DIR}/libraries/s2sdk/lib/public/win64/2015/libprotobuf.lib)
 elseif(UNIX)
-    target_link_libraries(Protobufs PUBLIC ${PROJECT_SOURCE_DIR}/libraries/hl2sdk-cs2/lib/linux64/release/libprotobuf.a)
+    target_link_libraries(Protobufs PUBLIC ${PROJECT_SOURCE_DIR}/libraries/s2sdk/lib/linux64/release/libprotobuf.a)
 endif()
 set_target_properties(Protobufs PROPERTIES LINKER_LANGUAGE CXX)
 set_target_properties(Protobufs PROPERTIES FOLDER SDK)

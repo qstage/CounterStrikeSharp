@@ -17,9 +17,7 @@
 #include "core/managers/chat_manager.h"
 
 #include <igameevents.h>
-#include <public/eiface.h>
 
-#include "characterset.h"
 #include "core/coreconfig.h"
 #include "core/gameconfig.h"
 #include "core/log.h"

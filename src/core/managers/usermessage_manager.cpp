@@ -17,12 +17,10 @@
 #include "core/managers/usermessage_manager.h"
 
 #include <entity2/entitysystem.h>
-#include <public/eiface.h>
 
 #include "core/UserMessage.h"
 #include "core/log.h"
 #include "core/managers/player_manager.h"
-#include "igameeventsystem.h"
 #include "scripting/callback_manager.h"
 
 using namespace google;

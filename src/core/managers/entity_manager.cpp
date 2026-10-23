@@ -24,7 +24,6 @@
 
 #include <vector>
 
-#include <public/eiface.h>
 #include "scripting/callback_manager.h"
 
 namespace counterstrikesharp {

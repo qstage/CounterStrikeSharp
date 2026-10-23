@@ -1,6 +1,5 @@
 #pragma once
 
-#include <public/eiface.h>
 #include <string>
 #include <filesystem>
 #include <regex>

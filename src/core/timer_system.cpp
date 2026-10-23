@@ -31,8 +31,6 @@
 
 #include "core/timer_system.h"
 
-#include <public/eiface.h>
-
 #include <algorithm>
 
 #include "core/globals.h"

@@ -14,11 +14,7 @@
  *  along with CounterStrikeSharp.  If not, see <https://www.gnu.org/licenses/>. *
  */
 
-#include "igameeventsystem.h"
-
 #include <edict.h>
-#include <eiface.h>
-#include <filesystem.h>
 #include <public/worldsize.h>
 
 #include "mm_plugin.h"

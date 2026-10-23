@@ -267,7 +267,7 @@ static void SetEntityIndex(ScriptContext& scriptContext)
 
     if (gameEvent != nullptr)
     {
-        gameEvent->SetEntity(keyName, CEntityIndex{ index });
+        gameEvent->SetEntity(keyName, globals::entitySystem->GetEntityInstance(CEntityIndex(index + 1)));
     }
 }
 
